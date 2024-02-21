@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: release-nginx
+  labels:
+    name: release-nginx
+spec:
+  containers:
+  - name: release-nginx
+    image: asadis7171/cloudethix_release_nginx_asad:v1
+    ports:
+      - containerPort: 80
